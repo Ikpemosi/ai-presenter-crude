@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 230 25% 5%;
+  --foreground: 210 40% 98%;
+  
+  --card: 230 25% 7%;
+  --card-foreground: 210 40% 98%;
+  
+  --popover: 230 25% 7%;
+  --popover-foreground: 210 40% 98%;
+  
+  --primary: 189 100% 50%;
+  --primary-foreground: 210 40% 98%;
+  
+  --secondary: 217 100% 50%;
+  --secondary-foreground: 210 40% 98%;
+  
+  --muted: 230 25% 10%;
+  --muted-foreground: 215 20.2% 65.1%;
+  
+  --accent: 142 71% 45%;
+  --accent-foreground: 210 40% 98%;
+  
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  
+  --border: 230 25% 15%;
+  --input: 230 25% 15%;
+  --ring: 189 100% 50%;
+  
+  --radius: 0.5rem;
+}
+
+.chat-gradient {
+  background: linear-gradient(
+    135deg,
+    hsl(230 25% 7%) 0%,
+    hsl(230 25% 10%) 50%,
+    hsl(217 50% 15%) 100%
+  );
+}
+
+.glow {
+  position: relative;
+}
+
+.glow::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(
+    45deg,
+    hsl(189 100% 50% / 0.5),
+    hsl(217 100% 50% / 0.5)
+  );
+  filter: blur(7px);
+  z-index: -1;
+}
+
+.markdown {
+  @apply text-foreground;
+}
+
+.markdown h1 {
+  @apply text-2xl font-bold mb-4 text-primary;
+}
+
+.markdown h2 {
+  @apply text-xl font-semibold mb-3 text-primary;
+}
+
+.markdown h3 {
+  @apply text-lg font-medium mb-2 text-primary;
+}
+
+.markdown p {
+  @apply mb-4;
+}
+
+.markdown ul {
+  @apply list-disc list-inside mb-4;
+}
+
+.markdown ol {
+  @apply list-decimal list-inside mb-4;
+}
+
+.markdown li {
+  @apply mb-1;
+}
+
+.markdown code {
+  @apply bg-muted px-1.5 py-0.5 rounded text-accent;
+}
+
+.markdown pre {
+  @apply bg-muted p-4 rounded-lg mb-4 overflow-x-auto;
+}
+
+.markdown blockquote {
+  @apply border-l-4 border-primary pl-4 italic my-4;
+}
+
+.markdown table {
+  @apply w-full border-collapse mb-4;
+}
+
+.markdown th,
+.markdown td {
+  @apply border border-border p-2;
+}
+
+.markdown th {
+  @apply bg-muted;
+}
+
+.markdown a {
+  @apply text-primary hover:text-primary/80 underline;
+}
+
+.markdown hr {
+  @apply my-4 border-border;
+}
