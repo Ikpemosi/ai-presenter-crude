@@ -53,9 +53,9 @@ export async function POST(req: Request) {
 
     const stream = await anthropic.messages.create({
       messages: messageHistory,
-      model: "claude-3-opus-20240229",
+      model: "claude-3-5-sonnet-20241022",
       max_tokens: 1000,
-      temperature: 0.5,
+      temperature: 0.2,
       stream: true,
     });
 
