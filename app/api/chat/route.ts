@@ -73,7 +73,7 @@ export async function POST(req: Request) {
               text: "Begin the presentation using the attached PDF proposal"
             },
             {
-              type: "file",
+              type: "document",
               source: {
                 type: "base64",
                 media_type: "application/pdf",
