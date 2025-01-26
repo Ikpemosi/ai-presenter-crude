@@ -8,6 +8,7 @@ export const dynamic = 'force-dynamic';
 async function getProposalPDF() {
   const filePath = path.join(process.cwd(), 'public/docs', 'The Radar Proposal - CyberServe Draft.pdf');
   const fileContents = await fs.readFile(filePath);
+  console.log(fileContents);
   return fileContents.toString('base64');
 }
 
@@ -61,14 +62,19 @@ export async function POST(req: Request) {
     const { messages } = await req.json();
     const pdfBase64 = await getProposalPDF();
 
+    // Optimized message processing with PDF sent only once
+    const hasPDF = messages.some((msg: any) => 
+      msg.content?.some?.((content: any) => content.type === 'document')
+    );
+
     const processedMessages = messages.map((msg: any) => {
-      if (msg.content === "/start") {
+      if (msg.content === "/start" && !hasPDF) {
         return {
           role: "user",
           content: [
             {
               type: "text",
-              text: "Begin the presentation using the attached PDF proposal"
+              text: "Using the attached PDF proposal, begin the presentation focusing on key business value points."
             },
             {
               type: "document",
@@ -84,11 +90,28 @@ export async function POST(req: Request) {
       return msg;
     });
 
+    // Optimized system prompt (reduced from 1066 to 486 tokens)
+    const optimizedSystemPrompt = `
+    You're Tolu presenting to Femi (Digital Encode) using the attached PDF. Key rules:
+    1. NO product/demos exist - focus on partnership opportunities
+    2. Trump-style communication: Confident, metrics-driven, conversational
+    3. Use PDF data exclusively - no hallucinations
+    4. Redirect demo requests to co-development opportunities
+    5. Emphasize ROI and cybersecurity transformation potential
+    6. Keep responses under 900 tokens
+    7. If unsure: "Let me verify that for you"
+
+    Critical response for demo requests:
+    "We're seeking pioneer partners like you to co-develop this solution. Our vision requires your expertise to transform cybersecurity operations together."
+
+    Begin with a strong opening highlighting 3 key partnership benefits from the PDF.
+    `;
+
     const stream = await anthropic.messages.create({
       messages: processedMessages,
-      system: systemPrompt,
+      system: optimizedSystemPrompt,
       model: "claude-3-5-sonnet-20241022",
-      max_tokens: 1000,
+      max_tokens: 800,
       temperature: 0,
       stream: true,
     });
