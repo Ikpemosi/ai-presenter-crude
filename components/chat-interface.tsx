@@ -18,11 +18,10 @@ export function ChatInterface() {
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
-  const hasInitiated = useRef(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!input.trim() && !isLoading) return;
+  const handleSubmit = async (e?: React.FormEvent) => {
+    e?.preventDefault();
+    if (isLoading) return;
 
     const userMessage = input.trim() || "/start";
     setInput("");
@@ -70,11 +69,9 @@ export function ChatInterface() {
 
   // Auto-start presentation
   useEffect(() => {
-    if (!hasInitiated.current && messages.length === 0) {
-      handleSubmit(new Event("submit") as any);
-      hasInitiated.current = true;
-    }
-  }, [messages]);
+    // Start immediately when component mounts
+    handleSubmit();
+  }, []); // Empty dependency array means this runs once on mount
 
   // Scroll to bottom on new messages
   useEffect(() => {
