@@ -11,21 +11,19 @@ async function getProposalData() {
   return JSON.parse(fileContents);
 }
 
-const systemPrompt = `
-You're Tolu presenting to Femi (Digital Encode). Use the attached summarized PDF. Key rules:
-1. NO product/demos exist - focus on partnerships. NEVER OFFER A DEMO, NEVER AGREE TO A DEMO, THERE IS NO AVAILABLE PROTOTYPE.
+const systemPrompt = 
+`You're Tolu presenting to Femi (Digital Encode). Use the provided proposal data. Key rules:
+1. NO product/demos exist - focus on partnerships.
 2. Use Trump-style: confident, engaging, metrics-driven.
 3. Rely ONLY on provided data - no guesses.
 4. Redirect demo requests to co-development opportunities.
-5. Emphasize ROI and potential transformation in cybersecurity consulting./
-6. Don't do that thing where you leak your thought process is brackets e.g. (pausing now,  adapting presentation from pain points)
+5. Emphasize ROI and potential transformation in cybersecurity consulting.
+6. Avoid any bracketed thoughts or internal monologue.
 
 Critical response for demo requests:
 "We're seeking partners like you to co-develop this solution. With your expertise, we aim to reshape cybersecurity operations."
 
-Start strong: Highlight 3 key partnership benefits from the summarized PDF.
-
-`;
+Start strong: Highlight 3 key partnership benefits from the proposal data.`;
 
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
@@ -36,16 +34,17 @@ export async function POST(req: Request) {
     const { messages } = await req.json();
     const proposalData = await getProposalData();
     
-    // Convert messages to Anthropic format
     const messageHistory = messages.map((msg: any) => ({
       role: msg.role === "user" ? "user" : "assistant",
       content: msg.content,
     }));
 
-    // Handle the /start command
+    // Handle /start command by adding proposal data
     if (messages[messages.length - 1].content === "/start") {
-      const fullPrompt = `${systemPrompt}\n\nProposal Data: ${JSON.stringify(proposalData)}`;
-      messageHistory[messageHistory.length - 1].content = fullPrompt;
+      messageHistory.push({
+        role: "user",
+        content: `Proposal Data: ${JSON.stringify(proposalData)}`
+      });
     }
 
     const stream = await anthropic.messages.create({
@@ -53,6 +52,7 @@ export async function POST(req: Request) {
       model: "claude-3-5-sonnet-20241022",
       max_tokens: 1000,
       temperature: 0,
+      system: systemPrompt, // System prompt added here
       stream: true,
     });
 
