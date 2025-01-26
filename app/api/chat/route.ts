@@ -1,4 +1,4 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { Anthropic } from "@anthropic-ai/sdk";
 import { NextResponse } from "next/server";
 import { promises as fs } from 'fs';
 import path from 'path';
@@ -30,59 +30,48 @@ Guidelines:
 - Use specific numbers and metrics from the proposal to build credibility
 `;
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
+const anthropic = new Anthropic({
+  apiKey: process.env.ANTHROPIC_API_KEY,
+});
 
 export async function POST(req: Request) {
-  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-
   try {
     const { messages } = await req.json();
     const proposalData = await getProposalData();
     
-    // Create chat history from previous messages
-    const chat = model.startChat({
-      history: messages.map((msg: any) => ({
-        role: msg.role === "user" ? "user" : "model",
-        parts: msg.content,
-      })),
-      generationConfig: {
-        maxOutputTokens: 1000,
-        temperature: 0.5,
-      },
-    });
+    // Convert messages to Anthropic format
+    const messageHistory = messages.map((msg: any) => ({
+      role: msg.role === "user" ? "user" : "assistant",
+      content: msg.content,
+    }));
 
     // Handle the /start command
     if (messages[messages.length - 1].content === "/start") {
       const fullPrompt = `${systemPrompt}\n\nProposal Data: ${JSON.stringify(proposalData)}`;
-      const result = await chat.sendMessageStream(fullPrompt);
-      const encoder = new TextEncoder();
-      const stream = new ReadableStream({
-        async start(controller) {
-          for await (const chunk of result.stream) {
-            const text = chunk.text();
-            controller.enqueue(encoder.encode(text));
-          }
-          controller.close();
-        },
-      });
-      
-      return new Response(stream);
+      messageHistory[messageHistory.length - 1].content = fullPrompt;
     }
 
-    // Handle regular messages
-    const result = await chat.sendMessageStream(messages[messages.length - 1].content);
+    const stream = await anthropic.messages.create({
+      messages: messageHistory,
+      model: "claude-3-opus-20240229",
+      max_tokens: 1000,
+      temperature: 0.5,
+      stream: true,
+    });
+
     const encoder = new TextEncoder();
-    const stream = new ReadableStream({
+    const readable = new ReadableStream({
       async start(controller) {
-        for await (const chunk of result.stream) {
-          const text = chunk.text();
-          controller.enqueue(encoder.encode(text));
+        for await (const chunk of stream) {
+          if (chunk.type === 'content_block_delta' && chunk.delta.text) {
+            controller.enqueue(encoder.encode(chunk.delta.text));
+          }
         }
         controller.close();
       },
     });
-    
-    return new Response(stream);
+
+    return new Response(readable);
   } catch (error) {
     console.error('Error in chat route:', error);
     return NextResponse.json(
