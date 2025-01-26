@@ -78,7 +78,6 @@ export async function POST(req: Request) {
                 type: "base64",
                 media_type: "application/pdf",
                 data: pdfBase64,
-                file_name: "proposal.pdf"
               }
             }
           ]
