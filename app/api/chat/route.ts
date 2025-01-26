@@ -6,7 +6,7 @@ import path from 'path';
 export const dynamic = 'force-dynamic';
 
 async function getProposalPDF() {
-  const filePath = path.join(process.cwd(), 'docs', 'The Radar Proposal - CyberServe Draft.pdf');
+  const filePath = path.join(process.cwd(), 'public/docs', 'The Radar Proposal - CyberServe Draft.pdf');
   const fileContents = await fs.readFile(filePath);
   return fileContents.toString('base64');
 }
