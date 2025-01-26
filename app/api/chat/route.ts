@@ -93,7 +93,7 @@ export async function POST(req: Request) {
       messages: messageHistory,
       model: "claude-3-5-sonnet-20241022",
       max_tokens: 1000,
-      temperature: 0.2,
+      temperature: 0,
       stream: true,
     });
 
