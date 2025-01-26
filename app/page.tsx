@@ -21,7 +21,7 @@ export default function Home() {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = '/docs/presentation.pdf';
-    link.download = 'Example_Corp_Proposal.pdf';
+    link.download = 'The Radar Proposal - CyberServe Draft.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
