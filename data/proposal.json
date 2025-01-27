@@ -146,5 +146,77 @@
       "title": "Closing Note",
       "content": "All prices are negotiable based on project scope and funding availability. I'm committed to finding a way to make these solutions accessible to IDEA while ensuring sustainability."
     }
-  ]
+  ],
+
+  "organizationProfile": {
+    "title": "INCLUSIVE DEVELOPMENT AND EMPOWERMENT ADVOCACY",
+    "aboutUs": {
+      "vision": "A future characterized by universal access, equal opportunities, and unfettered empowerment of women, youth, and persons with disability.",
+      "mission": "To advance the social, economic, and political inclusion of women, youth and persons with disability through strategic advocacy, capacity enhancement and community engagement, thereby advancing social justice, equality, human rights, and a world of inclusive opportunities."
+    },
+    "aimsAndTargets": {
+      "aims": [
+        "Promote inclusivity and empowerment for women, youth, and persons living with disabilities",
+        "Advance social justice and human rights for marginalized groups",
+        "Foster a culture of diversity and equity in society"
+      ],
+      "specificTargets": [
+        "Establish 6 community centers in the next 2 years for skill acquisition, empowerment and climate literacy",
+        "Provide specialised curriculum in inclusive education practices to teachers in Nigeria",
+        "Provide 500 persons with disabilities with access to healthcare services",
+        "Advocate for the passage of policy reforms in the coming year based on identified needs",
+        "Support 20 entrepreneurs from marginalized groups in accessing funding and resources",
+        "Establishing a legal aid clinic for marginalized groups and victims of gender based violence",
+        "Developing a mentorship program for young people with disabilities",
+        "Launching a public awareness campaign to challenge gender stereotypes",
+        "Conducting research on the intersectionality of gender, disability and youth",
+        "Establishing a helpline and support service for victims of discrimination and marginalizations"
+      ]
+    },
+    "objectives": [
+      "Provide education and training programs to enhance skills and knowledge",
+      "Advocate for policy reforms and legal protections",
+      "Build capacity and empower marginalized communities",
+      "Provide access to resources and support services",
+      "Promote awareness and challenge harmful stereotypes and stigma",
+      "Foster partnerships and collaborations with stakeholders",
+      "Develop and implement inclusive education programs for schools",
+      "Establish a network of community centers for marginalized groups",
+      "Advocate for accessible infrastructure and transportation",
+      "Support entrepreneurship and economic empowerment initiatives for women and youth",
+      "Conduct policy analysis and advocacy on issues affecting marginalized groups",
+      "Develop and implement leadership development programs for marginalized groups",
+      "Provide access to healthcare and rehabilitation services for persons with disabilities",
+      "Collaborate with media outlets to promote inclusive representation and storytelling",
+      "Develop and implement programs to challenge harmful gender stereotypes and biases",
+      "Advocate for the rights of marginalized groups in international forums and policy spaces"
+    ],
+    "team": [
+      {
+        "name": "Blessing Anyiwe, HRM, RN, MPH",
+        "role": "Executive Director",
+        "bio": "Blessing Anyiwe, HRM, RN, MPH, is a compassionate nurse and entrepreneur with a longstanding passion for serving individuals with disabilities. Holding a Master's degree in Public Health, Blessing brings a comprehensive understanding of healthcare systems and population health to her work. With 19 years of experience in home care settings, she has developed a unique expertise in holistic care assessments, resource coordination, and interdisciplinary collaboration to ensure comprehensive client support. Additionally, she has advocated for climate change awareness through various organizational partnerships. As a Queen, Blessing is dedicated to using her platform to promote healthcare access, equity, and empowerment for all. Beyond her professional endeavors, Blessing enjoys exploring her creative side through building new businesses and traveling, as well as nurturing meaningful relationships with friends and family through singing and social connections. Dedicated to empowering individuals to reach their full potential, Blessing is committed to delivering exceptional support and resources to those in need. She looks forward to connecting with like-minded professionals and individuals who share her passion for making a positive impact."
+      },
+      {
+        "name": "HRM Ayo Isinyemeze",
+        "role": "Executive Intergovernmental Lead",
+        "bio": "HRM Ayo Isinyemeze is a visionary traditional ruler, multifaceted professional, and entrepreneur dedicated to social inclusion and equity. With a background in law and journalism, His Majesty leverages his expertise to protect the vulnerable, challenge injustice, dismantle systemic barriers, and promote equality. He frequently employs the mass media to ignite meaningful conversations, inspire action, and drive tangible change in his community and society at large. As a king, His Majesty leads with compassion, guiding his people with kindness, empathy, and strength. As an entrepreneur, he creates opportunities for economic growth and empowerment, harnessing the power of innovation and collaboration to drive positive change. His leadership is marked by a commitment to fostering an environment where everyone has the chance to thrive and contribute meaningfully to the community. Recently, His Majesty has focused on advocating for the empowerment of women, youth, and persons with disabilities, recognizing the inherent value and potential of every individual. As a co-founder of the Inclusive Development and Empowerment Advocacy Foundation, he champions inclusive development, gender equality, and disability rights through nuanced and intersectional collaborations. His Majesty's involvement is driven by his belief in a more just and equitable society, inspiring a new generation of leaders."
+      },
+      {
+        "name": "Ikechukwu Edward, CNA, RN, BSN",
+        "role": "Director, Fin and Admin",
+        "bio": "Ikechukwu Edward, CNA, RN, BSN, is a dedicated healthcare professional with a passion for delivering exceptional patient care. Commencing his career in 2017 as a nursing assistant, he provided personalized support to senior citizens with diverse needs, including mental and physical challenges. Driven by his commitment to excellence, Ikechukwu pursued advanced education, becoming a Registered Nurse and currently practicing at the University of Minnesota's teaching hospital in Minneapolis as an Oncology Nurse. In addition to his nursing expertise, Ikechukwu holds a Bachelor of Science in Business Administration from the University of Benin and an Associate Accounting certification (AAT) from the Institute of Chartered Accountants of Nigeria. Prior to his transition to healthcare, he worked as a Transaction Officer at Mansard Insurance. Ikechukwu's diverse background and skills have equipped him to make a meaningful impact in the lives of others. He is enthusiastic about collaborating with like-minded professionals to drive positive change, particularly in supporting individuals with physical challenges. Outside of his professional endeavors, Ikechukwu enjoys exploring the outdoors, traveling, and engaging in community service."
+      },
+      {
+        "name": "Dr. Anita Adeyemi",
+        "role": "Director, Projects and Programs Development",
+        "bio": "Dr. Anita Ehinome Adeyemi is a leader with over 30 years of experience in business, finance, environmental sustainability, and mental health advocacy. With a degree in Economics from Edo State University, she blends corporate expertise with impactful social initiatives. As Senior Vice President of Ecologistics Integrated Services, she has led Nigeria's participation in major climate conferences like COP 28 in Dubai and COP 27 in Egypt, focusing on climate investment and technology assessment. Anita manages trade delegations and designs profitable financial instruments, demonstrating versatility across sectors. As Vice-President of the Women In Renewable Energy Association (WIREA) and the first female Vice President of the Renewable Energy & Energy Efficiency Associations Alliance (REEEA-A), she advocates for Nigeria’s energy transition through capacity building and awareness. Passionate about mental health, Anita leads initiatives with the Psychological & Emotional Wellbeing for Women and Youths (PEW-WY), creating campaigns to destigmatize mental illness. She has launched initiatives like the Mental Health Initiative at COP 28. With an honorary doctorate from El Roi London Academy, she is pursuing a Ph.D. in Transpersonal Mental Health. Her dedication to sustainable change and equitable access to mental healthcare makes her a significant force internationally."
+      }
+    ],
+    "gallery": {
+      "location": "NIGERIA FEDERAL REPUBLIC OF"
+    },
+    "acronym": "IDEA",
+    "fullName": "Inclusive Development and Empower Advocacy"
+  }
 }
