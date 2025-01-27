@@ -78,7 +78,7 @@ export async function POST(req: Request) {
     if (messages[messages.length - 1].content === "/start") {
       messageHistory.push({
         role: "user",
-        content: `Ready.`,
+        content: `Ready!`,
       });
     }
 
