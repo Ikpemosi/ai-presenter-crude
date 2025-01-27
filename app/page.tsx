@@ -20,8 +20,8 @@ export default function Home() {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/docs/The Radar Proposal - CyberServe Draft.pdf';
-    link.download = 'The Radar Proposal - CyberServe.pdf';
+    link.href = '/docs/Digital-Transformation-Proposal-for-IDEA.pdf';
+    link.download = 'IDEA Proposal - by Arnold.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
