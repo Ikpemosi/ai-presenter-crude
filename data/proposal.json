@@ -1,820 +1,150 @@
-{ "CRITICAL":"THERE IS NO PRODUCT OR PROTOTYPE YET, DO NOT OFFER ANY DEMO UNDER ANY CIRCUMSTANCES, DO NOT SUGGEST DEMO TIMES OR DATES, DO NOT DESCRIBE PRODUCT FEATURES AS IF THEY CURRENTLY EXIST, When asked about a demo, your ONLY response MUST be, We're currently seeking pioneer partners like Digital Encode to co-develop this solution. What we're offering is an innovative partnership opportunity, not a ready-made product. We want to collaborate with experts like you to shape this from the ground up. Our vision is to transform cybersecurity operations, but we need your insights to make it a reality.",
-  "title": "PROPOSAL - CYBERSERVE",
-  "date": "25 JANUARY 2025",
-  "prepared_by": "TheRadarTech",
-  "confidential_notice": "This document contains confidential and proprietary information of The Radar. It is intended for the exclusive use of Digital Encode. Any unauthorized use or reproduction of this document is prohibited.",
-  "copyright": "© TheRadarTech, 2025",
-  "introduction": {
-    "greeting": "Dear Digital Encode team,",
-    "mission_alignment": "When we learned about your mission to modernize and streamline cybersecurity consulting, we recognized a familiar challenge.",
-    "problem_statement": "Your team of expert consultants spending countless hours manually compiling reports, juggling multiple assessment tools, and managing complex client engagements – it’s a story we’ve heard from security firms across the industry.",
-    "opportunity": "But in that challenge, we saw an opportunity to revolutionize how cybersecurity assessments are conducted.",
-    "commitment": "Your commitment to delivering thorough, actionable security insights to your clients while maintaining the highest standards of quality struck a chord with us.",
-    "proposal_vision": "What you’ll find in this proposal is a vision for transforming how cybersecurity assessments are conducted, reports are generated, and findings are managed.",
-    "platform_description": "We’re talking about an intelligent platform that works alongside your consultants, understanding their needs, automating the mundane, and enabling them to focus on what they do best – finding and helping clients fix security vulnerabilities.",
-    "solution_evolution": "We’re building a solution that meets your current needs and evolves with you.",
-    "features": [
-      "AI-powered report generation that cuts reporting time significantly",
-      "Intelligent social engineering campaign management",
-      "Seamless integration with your existing tools"
-    ],
-    "closing": "Let’s explore how we can transform your assessment processes, streamline your operations, and set new standards for efficiency in cybersecurity consulting.",
-    "signature": "Warmly, TheRadarTech Team.",
-    "disclaimer": "Please note that all prices quoted and timelines projected in this document are estimates which can be subject to change according to the scope of the project."
-  },
-  "project_brief": {
-    "problem": {
-      "title": "THE PROBLEM: WHEN EXCELLENCE MEETS EXCEL SHEETS",
-      "description": "In an age where AI powers our phones and cars drive themselves, elite cybersecurity consultants at Digital Encode still spend their evenings wrestling with Word documents and spreadsheets.",
-      "current_state": "Your team of brilliant security experts – who can find vulnerabilities that automated scanners miss and craft social engineering campaigns that slip past the most vigilant defenses – spends nearly half their time not on their craft, but on documentation."
+{
+  "title": "Digital Transformation Proposal for IDEA",
+  "author": "Arnold Adeyemi",
+  "sections": [
+    {
+      "title": "Introduction",
+      "content": "Dear IDEA Leadership Team,\n\nWhen I first encountered your vision of creating a world of universal access and unfettered empowerment, something profound resonated within me. Your mission isn't just about providing services – it's about fundamentally transforming lives, breaking down barriers, and creating a world where everyone, regardless of their circumstances, can thrive. That's exactly the kind of initiative that makes me leap out of bed each morning, eager to push the boundaries of technology for social good.\n\nYour commitment to advancing social justice through strategic advocacy and community engagement speaks directly to what I believe technology should do – serve humanity in its fullest sense. I've spent time immersing myself in your objectives, understanding your dreams, and crafting what I believe is more than just a technical proposal – it's a roadmap to digital inclusion that will amplify your impact in ways previously unimagined.\n\nFrom a user-centric website to a groundbreaking AI-powered app and an impactful social media strategy, we’ve crafted a solution that aligns perfectly with your values and mission."
     },
-    "current_state_of_work": {
-      "title": "THE CURRENT STATE OF WORK",
-      "description": "The reality at Digital Encode reflects a stark contrast: elite-class security expertise bottlenecked by tools better suited to the last decade.",
-      "consultant_workload": "Your consultants juggle between 1–4 clients simultaneously, each requiring the same meticulous attention to detail in both testing and documentation.",
-      "report_writing": "A single week of penetration testing can spawn another week of report writing – not because the insights are lacking, but because transforming technical discoveries into clear, actionable client recommendations remains a stubbornly manual process that’s reliant on the multiple hats of your talented team."
-    },
-    "technical_assessments": {
-      "title": "Technical Assessments",
-      "description": "When your team conducts technical assessments, they put together insights from a plethora of specialized tools: Burp Suite revealing application vulnerabilities, Nessus/Qualys scanning for network weaknesses, and let’s not forget the hundreds of specialized tools on Kali Linux.",
-      "tool_outputs": "Each tool speaks its own language, with outputs that must be manually translated, correlated, and contextualized.",
-      "analogy": "It’s like having brilliant detectives forced to spend half their investigation time filing paperwork."
-    },
-    "social_engineering_assessments": {
-      "title": "Social Engineering Assessments",
-      "description": "Your social engineering assessments showcase similar paradoxes. Your consultants craft sophisticated campaigns that can bypass the mental defenses of security-conscious teams.",
-      "infrastructure_setup": "Yet the infrastructure setup for these campaigns – from domain acquisition to email configuration, from website cloning to campaign tracking – consumes precious time that could be spent refining the actual social engineering strategy."
-    },
-    "grc_assessments": {
-      "title": "GRC Assessments",
-      "description": "On the GRC side of things, your consultants navigate the complex maze of compliance frameworks – PCI-DSS, ISO, and the likes – while maintaining the thread of business context throughout.",
-      "tool_limitations": "They’re building comprehensive security programs but the tools at their disposal often reduce this nuanced work to spreadsheet cells and static documents, making it difficult to track the living, breathing nature of compliance progress."
-    },
-    "custom_solutions": {
-      "title": "Custom Solutions",
-      "description": "The most telling sign? Your team had already begun crafting their own solutions.",
-      "example": "That reporting script for Nessus scans points to a broader truth: your consultants know exactly what they need.",
-      "conclusion": "They just haven’t had the comprehensive platform to bring their vision of efficient, modern security consulting to life."
-    }
-  },
-  "proposed_solution": {
-    "title": "PROPOSED SOLUTION",
-    "platform_name": "CyberServe | Elevating Security Consulting Through Intelligent Automation",
-    "vision": "When a consultant discovers a SQL injection vulnerability, they shouldn’t have to switch between three different tools and multiple report templates. They should be able to focus on understanding the implications, testing the extent of the vulnerability, and crafting meaningful remediation advice.",
-    "goal": "Let’s help amplify the irreplaceable human expertise that Digital Encode brings to security assessments.",
-    "platform_description": "We’re proposing a transformation that works the way security consultants think. A platform that allows your consultants focus on what humans do best – creative problem solving, critical thinking, and connecting with clients – while intelligent automation handles the rest."
-  },
-  "cyberscribe": {
-    "title": "CYBERSCRIBE",
-    "subtitle": "Security Documentation, Reimagined",
-    "description": "CyberScribe transforms security assessment documentation from a time-consuming manual process into an intelligent, context-aware system that understands the nuances of security testing.",
-    "key_features": [
-      "Intelligent finding documentation with contextual understanding",
-      "Automatic evidence collection and categorization",
-      "Dynamic report generation across multiple formats",
-      "Tool-agnostic finding integration",
-      "Comprehensive vulnerability tracking and historical analysis",
-      "Team collaboration and knowledge management",
-      "Standardized yet flexible reporting capabilities",
-      "Secure, anonymized knowledge base development"
-    ],
-    "workflow_transformation": {
-      "title": "Transforming the Assessment Workflow",
-      "description": "CyberScribe integrates naturally into a security consultant’s testing methodology.",
-      "initial_scan": "From the moment you begin an assessment, it becomes an intelligent companion that understands the context of your work.",
-      "vulnerability_discovery": "The real transformation becomes apparent during vulnerability discovery.",
-      "evidence_management": {
-        "title": "Advanced Evidence Management",
-        "description": "CyberScribe understands different types of security evidence and how they relate to findings.",
-        "terminal_screenshots": "Terminal screenshots are automatically parsed and relevant commands, outputs, and errors are extracted.",
-        "network_traffic": "Network traffic captures can be analyzed to identify the specific packets that demonstrate a vulnerability.",
-        "screenshots": "Screenshots are enhanced with intelligent annotations that highlight critical elements - from injection points to successful exploitation results."
-      }
-    },
-    "living_assessment_database": {
-      "title": "The Living Assessment Database",
-      "description": "Unlike traditional document-based reports, CyberScribe maintains findings as structured data in a living database.",
-      "capabilities": [
-        "Findings evolve as your assessment progresses.",
-        "During retests, this structured approach proves invaluable.",
-        "New findings are automatically analyzed for relationships with previously discovered vulnerabilities."
-      ]
-    },
-    "tool_integration": {
-      "title": "Tool Integration and Methodology Support",
-      "description": "CyberScribe works alongside your existing security toolkit, understanding that each firm and consultant has their preferred tools and methodologies.",
-      "intelligence": "This intelligence extends to methodology support."
-    },
-    "team_collaboration": {
-      "title": "Team Collaboration and Knowledge Management",
-      "description": "Security consulting firms thrive on collective expertise.",
-      "attribution": "When multiple consultants work on an assessment, CyberScribe maintains a clear understanding of who discovered what and when.",
-      "knowledge_sharing": "Knowledge sharing extends beyond individual assessments."
-    },
-    "client_communication": {
-      "title": "Client Communication and Reporting",
-      "description": "Security findings are only valuable if clients can understand and act on them.",
-      "report_generation": "As findings are documented, CyberScribe maintains multiple views of your assessment data, automatically generating different report formats for different audiences.",
-      "quality_control": "Quality is never compromised for speed."
-    },
-    "integration_with_client_workflows": {
-      "title": "Integration with Client Workflows",
-      "description": "Modern security assessments don’t end with report delivery.",
-      "remediation_tracking": "During retests, the system helps track remediation progress across multiple rounds of testing."
-    }
-  },
-  "rerun": {
-    "title": "RERUN",
-    "subtitle": "Continuous Security Validation, But Intelligent",
-    "description": "ReRun transforms recurring security assessments from periodic manual exercises into a streamlined, automated process.",
-    "key_features": [
-      "Hybrid execution framework for flexible scanning",
-      "Multi-tool integration and orchestration",
-      "Intelligent scan scheduling and resource management",
-      "Automated vulnerability retest capabilities",
-      "Contextual results analysis",
-      "Comprehensive scan tracking and reporting",
-      "Adaptive testing strategy based on historical findings",
-      "Secure, isolated scanning infrastructure"
-    ],
-    "intelligent_scanning_orchestration": {
-      "title": "Intelligent Scanning Orchestration",
-      "description": "ReRun fundamentally changes how security consultants approach recurring assessments.",
-      "context_awareness": "Instead of treating each retest as a new engagement, the system maintains deep understanding of your client’s environment, the vulnerabilities you’ve discovered, and the validation methods that prove most effective."
-    },
-    "tool_integration": {
-      "title": "Tool Integration and Automation Framework",
-      "description": "Security consultants rely on a diverse arsenal of testing tools, each with its own strengths and specialties.",
-      "enhancement": "ReRun doesn’t try to replace these tools - it enhances them through intelligent orchestration."
-    },
-    "hybrid_execution_framework": {
-      "title": "Hybrid Execution Framework",
-      "description": "ReRun’s hybrid approach recognizes that different security validation scenarios require different execution strategies.",
-      "external_assets": "For externally accessible assets, ReRun can leverage dedicated scanning infrastructure with a lightweight agent that handles tool orchestration and result collection.",
-      "internal_assets": "However, security assessments often require access to internal networks or specific system configurations that exist on consultant machines."
-    },
-    "tool_orchestration_intelligence": {
-      "title": "Tool Orchestration Intelligence",
-      "description": "ReRun’s intelligence extends beyond simple scan scheduling.",
-      "integration_with_cyberscribe": "The system’s integration with CyberScribe’s knowledge base means each tool’s results are interpreted in context."
-    },
-    "scan_management": {
-      "title": "Scan Management and Resource Optimization",
-      "description": "ReRun’s hybrid architecture includes sophisticated resource management capabilities.",
-      "optimization": "It automatically optimizes scan scheduling to prevent tool conflicts, manage system load, and respect client-specified testing windows."
-    },
-    "results_analysis": {
-      "title": "Results Analysis and Integration",
-      "description": "ReRun doesn’t just execute tests - it understands security validation at a fundamental level.",
-      "contextual_intelligence": "This contextual intelligence proves particularly valuable in complex environments."
-    },
-    "validation_intelligence": {
-      "title": "Validation Intelligence",
-      "description": "ReRun’s integration with CyberScribe transforms how security findings evolve over time.",
-      "subtle_changes": "This intelligence helps eliminate false positives while ensuring that real security gaps don’t slip through transformed but unfixed."
-    },
-    "building_security_intelligence": {
-      "title": "Building Security Intelligence Over Time",
-      "description": "Each scan execution adds to your organization’s security knowledge base.",
-      "integration_with_cyberscribe": "The system’s integration with CyberScribe means this intelligence directly enhances your reporting capabilities."
-    },
-    "continuous_monitoring": {
-      "title": "Continuous Monitoring Capabilities",
-      "description": "Continuous security validation generates significant data about evolving security posture.",
-      "alert_management": "When monitoring detects security regression - previously fixed vulnerabilities that have resurfaced, new critical findings, or suspicious changes in security behavior - ReRun generates context-rich alerts."
-    }
-  },
-  "pretext": {
-    "title": "PRETEXT",
-    "subtitle": "Intelligent Social Engineering Campaign Management",
-    "description": "Pretext reimagines social engineering assessments as sophisticated, intelligence-driven operations.",
-    "key_features": [
-      "Intelligent target organization analysis",
-      "Automated infrastructure deployment",
-      "Sophisticated pretext generation",
-      "Multi-campaign management",
-      "Real-time interaction tracking",
-      "Behavioral pattern recognition",
-      "Anonymized knowledge base development",
-      "Comprehensive campaign analytics",
-      "Strict client data isolation"
-    ],
-    "campaign_intelligence": {
-      "title": "Campaign Intelligence and Crafting",
-      "description": "The heart of any social engineering assessment lies in understanding the target organization and developing pretexts that will yield meaningful security insights.",
-      "target_analysis": "When preparing a new campaign, the system analyzes the target organization’s online presence, understanding their communication patterns, brand elements, and public-facing systems."
-    },
-    "infrastructure_orchestration": {
-      "title": "Infrastructure Orchestration",
-      "description": "A convincing pretext requires sophisticated technical infrastructure, yet setting up this environment traditionally consumes valuable consultant time.",
-      "domain_selection": "The system analyzes target domains and suggests registration options that balance similarity with legal safety.",
-      "email_infrastructure": "With email infrastructure deployment, Pretext doesn’t just configure mail servers; it establishes the complete sending environment needed for deliverable campaigns."
-    },
-    "campaign_execution": {
-      "title": "Campaign Execution Framework",
-      "description": "The moment of campaign launch transforms months of security awareness training into measurable actions.",
-      "intelligent_delivery": "When a consultant initiates a campaign, Pretext activates a comprehensive execution framework that manages every aspect of the assessment.",
-      "real_time_monitoring": "Real-time monitoring transforms how consultants understand campaign effectiveness."
-    },
-    "response_analysis": {
-      "title": "Response Analysis and Pattern Recognition",
-      "description": "Understanding how users interact with social engineering attempts reveals crucial insights about organizational security culture.",
-      "behavioral_patterns": "When users engage with campaign elements, the system captures and analyzes their complete interaction path."
-    },
-    "continuous_campaign_refinement": {
-      "title": "Continuous Campaign Refinement",
-      "description": "Social engineering assessments aren’t static - they evolve as organizations adapt and users become more security-aware.",
-      "real_time_adjustment": "The system monitors campaign effectiveness indicators continuously, helping consultants identify when assessment strategies need refinement."
-    },
-    "multi_campaign_management": {
-      "title": "Multi-Campaign Management",
-      "description": "Modern security consulting firms often manage dozens of social engineering assessments simultaneously.",
-      "resource_allocation": "Resource allocation becomes intelligent rather than mechanical."
-    },
-    "knowledge_management": {
-      "title": "Knowledge Management and Security Intelligence",
-      "description": "Each social engineering assessment contributes to a growing body of security intelligence.",
-      "anonymized_insights": "When planning a new campaign, consultants can draw on anonymized insights about which pretext types prove most effective for different organizational roles or industries."
-    }
-  },
-  "guardian": {
-    "title": "GUARDIAN",
-    "subtitle": "Intelligent GRC Assessment Automation",
-    "description": "Guardian transforms GRC assessments by automating evidence collection, validation, and framework mapping through AI-powered orchestration.",
-    "key_features": [
-      "Parallel interview orchestration with real-time transcription",
-      "Intelligent documentation processing and requirement mapping",
-      "Automated evidence collection and chain of custody",
-      "Real-time gap analysis and inconsistency detection",
-      "Natural language compliance requirement understanding",
-      "Dynamic evidence portal for client interaction"
-    ],
-    "intelligent_interview_orchestration": {
-      "title": "Intelligent Interview Orchestration",
-      "description": "Guardian’s interview capabilities fundamentally change how consultants gather compliance evidence.",
-      "parallel_evidence_collection": "Instead of serial stakeholder interviews consuming precious assessment time, the system enables parallel evidence collection through intelligent conversation orchestration."
-    },
-    "documentation_intelligence": {
-      "title": "Documentation Intelligence",
-      "description": "Guardian transforms documentation review from manual analysis into intelligent processing.",
-      "intelligent_processing": "When reviewing security policies, system configurations, or procedural documents, the system understands both explicit statements and implicit implications for compliance."
-    },
-    "framework_navigation": {
-      "title": "Framework Navigation and Control Mapping",
-      "description": "Guardian understands the complex relationships between different compliance frameworks.",
-      "efficiency": "This efficiency means more thorough assessments completed in less time."
-    },
-    "evidence_collection": {
-      "title": "Evidence Collection and Validation Architecture",
-      "description": "Guardian maintains a robust chain of custody for all compliance evidence through a sophisticated evidence management system.",
-      "evidence_types": [
-        "Recorded video interviews with automatic transcription",
-        "Screen recordings of system configuration reviews",
-        "ReRun scan results with full execution logs",
-        "Policy document analysis with version tracking",
-        "System configuration snapshots with timestamps",
-        "Change management records with approval chains",
-        "Technical testing results from CyberScribe"
-      ]
-    },
-    "real_time_gap_analysis": {
-      "title": "Real-time Gap Analysis",
-      "description": "Traditional GRC assessments often identify gaps only after extensive evidence collection and analysis.",
-      "dynamic_process": "Guardian transforms this into a dynamic process that identifies potential issues as evidence is gathered."
-    },
-    "lim_powered_compliance": {
-      "title": "LIM-Powered Compliance Understanding",
-      "description": "Guardian’s intelligence goes beyond simple document processing.",
-      "natural_conversation": "During stakeholder interviews, this intelligence enables natural conversation flow while ensuring thorough coverage."
-    },
-    "practical_assessment_workflows": {
-      "title": "Practical Assessment Workflows",
-      "description": "A typical PCI-DSS assessment with Guardian demonstrates the system’s efficiency.",
-      "timeline": [
-        "09:00: Guardian simultaneously conducts structured interviews with system administrators, security team, and IT managers.",
-        "11:00: The system has processed security policies, analyzed firewall rulesets, and identified control gaps.",
-        "14:00: Technical validation phase where Guardian triggers ReRun to verify patch levels and validates firewall rules."
-      ]
-    },
-    "client_interaction": {
-      "title": "Client Interaction and Evidence Management",
-      "description": "Guardian streamlines the traditionally cumbersome process of evidence collection from clients.",
-      "secure_portal": "Rather than endless email chains and shared folders, clients interact with a secure portal that intelligently requests and tracks evidence submission."
-    },
-    "continuous_compliance_intelligence": {
-      "title": "Continuous Compliance Intelligence",
-      "description": "Guardian maintains a living understanding of compliance posture that evolves with new evidence and validation results.",
-      "dynamic_view": "This continuous intelligence helps organizations understand not just their current compliance status, but how their security program effectiveness evolves over time."
-    }
-  },
-  "implementation_approach": {
-    "title": "IMPLEMENTATION APPROACH",
-    "description": "Transforming assessment workflows requires careful orchestration. Our approach focuses on delivering immediate value while building toward comprehensive automation, with each phase enhancing your team's capabilities without disrupting ongoing client engagements.",
-    "phases": [
-      {
-        "phase": "Phase 1: CyberScribe and Core Infrastructure (Months 1-8)",
-        "description": "Our journey begins with CyberScribe, we will establish foundational capabilities and deliver immediate efficiency gains in report generation and findings management.",
-        "key_milestones": [
-          "Core platform and modular UI framework",
-          "Consultant workflow customization system",
-          "Drag-and-drop interface components",
-          "Individual toolset configuration",
-          "Tool integration framework deployment",
-          "LLM integration and training",
-          "Findings database implementation",
-          "Report generation system",
-          "Team training and stabilization"
-        ]
-      },
-      {
-        "phase": "Phase 2: ReRun Automation (Months 9-16)",
-        "description": "Building on CyberScribe’s foundation, ReRun will introduce automated validation capabilities.",
-        "key_milestones": [
-          "Central orchestration system",
-          "Agent architecture development and security hardening",
-          "Initial scanning node deployment and testing",
-          "VPN integration and queue management",
-          "Resource optimization and scaling framework",
-          "Integration testing and workflow refinement"
-        ]
-      },
-      {
-        "phase": "Phase 3: Pretexter Campaign Management (Months 17-22)",
-        "description": "With core assessment capabilities established, Pretexter will introduce sophisticated social engineering campaign management.",
-        "key_milestones": [
-          "Secure campaign infrastructure development",
-          "Email system and security controls",
-          "Landing page generation and management",
-          "Analytics and orchestration system",
-          "Integration testing and security validation"
-        ]
-      },
-      {
-        "phase": "Phase 4: Guardian Integration (Months 23-30)",
-        "description": "Guardian represents the most complex integration, building on all previous components while introducing sophisticated LIM-powered compliance capabilities.",
-        "key_milestones": [
-          "Framework mapping and LIM training",
-          "Interview system development and testing",
-          "Evidence correlation engine",
-          "Multi-framework integration",
-          "Final platform integration",
-          "System-wide testing and optimization"
-        ]
-      }
-    ],
-    "integration_with_existing_workflows": {
-      "title": "Integration with Existing Workflows",
-      "description": "Rather than disrupting established processes, our platform enhances them through intelligent automation.",
-      "components": [
-        "CyberScribe seamlessly accepts outputs from your existing security tools while maintaining your proven testing approaches.",
-        "ReRun’s hybrid architecture respects your current scanning and testing patterns while introducing automation opportunities.",
-        "Pretester enhances your social engineering methodology without forcing process changes.",
-        "Guardian adapts to your compliance assessment approach while reducing manual effort."
-      ]
-    },
-    "training_and_adoption_support": {
-      "title": "Training and Adoption Support",
-      "description": "Success requires more than just technology deployment. Our comprehensive support program ensures your team maximizes the platform’s capabilities.",
-      "support_table": {
-        "initial_training": [
-          "Component-specific workshops",
-          "Hands-on practice sessions",
-          "Integration with existing tools",
-          "Best practice guidance"
-        ],
-        "ongoing_support": [
-          "Regular check-ins and updates",
-          "Advanced feature training",
-          "New component orientation",
-          "Performance optimization guidance"
-        ],
-        "knowledge_transfer": [
-          "Documentation and guides",
-          "Process transition support",
-          "Technical deep dives",
-          "Custom workflow optimization"
-        ]
-      }
-    }
-  },
-  "pioneer_partner_benefits": {
-    "title": "PIONEER PARTNER BENEFITS",
-    "description": "As our Pioneer Partner, Digital Encode wields direct influence over the platform's evolution. Your expertise in security assessments shapes our development priorities, while your team gains exclusive advantages that enhance assessment capabilities and market position.",
-    "strategic_influence": {
-      "title": "Strategic Influence",
-      "description": "Regular strategy sessions with our development team transform your insights into platform capabilities.",
-      "benefits": [
-        "Your experience with diverse assessment types, tools, and client requirements guides platform development toward practical, powerful solutions."
-      ]
-    },
-    "technical_advantages": {
-      "title": "Technical Advantages",
-      "benefits": [
-        "Dedicated Infrastructure: Your unique requirements drive custom deployment configurations.",
-        "Priority Development: Custom features that match your needs move to the front of our development queue.",
-        "White-Label Control: Make the platform yours. Custom branding, tailored client portals, and personalized report templates maintain your market identity.",
-        "Premium Support: Direct access to our development team means faster solutions to complex challenges."
-      ]
-    },
-    "market_recognition": {
-      "title": "Market Recognition",
-      "description": "Shape security assessment automation’s future while strengthening your market position.",
-      "benefits": [
-        "Early access to new capabilities keeps you ahead of industry trends.",
-        "Joint case studies and industry events showcase your innovation leadership.",
-        "Advisory board participation ensures your voice guides key platform decisions."
-      ]
-    },
-    "enduring_value": {
-      "title": "Enduring Value",
-      "description": "Pioneer Partner status delivers lasting advantages through:",
-      "benefits": [
-        "Lifetime preferential pricing",
-        "Guaranteed feature access",
-        "Infrastructure scaling priority",
-        "Continuous optimization",
-        "Strategic planning sessions"
-      ]
-    }
-  },
-  "investment_and_value_proposition": {
-    "title": "INVESTMENT AND VALUE PROPOSITION",
-    "description": "Security assessment automation demands substantial infrastructure investment, but delivers transformative value. For Digital Encode, this represents an opportunity to shape the future of security consulting in Africa. Your expertise in both technical assessments and compliance frameworks positions you perfectly to influence how this platform evolves.",
-    "disclaimer": "All timelines and costs in this section are only estimates and may be subject to change.",
-    "standard_saas": {
-      "title": "Standard SaaS",
-      "description": "Our SaaS offering provides flexible access to advanced assessment automation.",
-      "base_platform": {
-        "cost": "$5,000/month",
-        "includes": [
-          "10 concurrent consultant workspaces",
-          "Secured assessment environment",
-          "Standard tool integrations",
-          "Business hours support"
-        ]
-      },
-      "usage_based_pricing": [
+    {
+      "title": "Proposed Solutions",
+      "sections": [
         {
-          "service": "Technical Reports",
-          "cost": "$200-400 based on complexity"
-        },
-        {
-          "service": "Automated Scans",
-          "cost": "$150-300 based on scope"
-        },
-        {
-          "service": "Social Engineering",
-          "cost": "$500-1,000 per campaign"
-        },
-        {
-          "service": "Framework Assessments",
-          "cost": "$2,000-4,000 based on framework"
-        }
-      ],
-      "volume_discounts": [
-        "10% off usage fees above $20,000/month",
-        "15% off usage fees above $30,000/month",
-        "20% off usage fees above $40,000/month"
-      ],
-      "typical_monthly_cost": {
-        "scenario": "15-consultant team performing:",
-        "services": [
-          "50 Technical Reports: $10,000-20,000",
-          "30 Automated Scans: $4,500-9,000",
-          "5 Social Engineering Campaigns: $2,500-5,000",
-          "3 Framework Assessments: $6,000-12,000"
-        ],
-        "base_platform": "$5,000",
-        "total_range": "$28,000-51,000"
-      }
-    },
-    "emerging_markets": {
-      "title": "Emerging Markets",
-      "description": "Same global pricing structure with flexible terms:",
-      "payment_options": [
-        "Bi-weekly payment splitting",
-        "60-day payment terms",
-        "Quarterly prepayment (5% additional discount)",
-        "Revenue-aligned billing cycles"
-      ],
-      "usage_management": [
-        "Rolling 30-day averages",
-        "Proactive usage alerts",
-        "Flexible threshold adjustments",
-        "Market-specific volume discounts"
-      ]
-    },
-    "pioneer_partner_program": {
-      "title": "Pioneer Partner Program",
-      "description": "For Digital Encode, Pioneer Partnership represents more than platform access - it’s an opportunity to shape security assessment automation for the African market while establishing technology leadership.",
-      "standard_markets": {
-        "development_and_testing_period": {
-          "initial_investment": "$100,000",
-          "includes": [
-            "Development influence rights",
-            "Feature prioritization",
-            "Early access to components",
-            "No usage fees during testing"
-          ]
-        },
-        "component_testing_windows": [
-          {
-            "component": "CyberScribe (Months 6-8)",
-            "activities": [
-              "Report automation refinement",
-              "Template customization",
-              "Integration validation"
-            ]
-          },
-          {
-            "component": "ReRun (Months 14-16)",
-            "activities": [
-              "Automation workflow design",
-              "Tool integration testing",
-              "Custom scan development"
-            ]
-          },
-          {
-            "component": "Prelexter (Months 20-22)",
-            "activities": [
-              "Campaign infrastructure testing",
-              "Template development",
-              "Analytics refinement"
-            ]
-          },
-          {
-            "component": "Guardian (Months 27-30)",
-            "activities": [
-              "Framework mapping validation",
-              "Interview system testing",
-              "Compliance workflow design"
-            ]
+          "title": "Website Development and Management",
+          "content": {
+            "features": [
+              "A fully accessible, responsive website that serves as your digital headquarters.",
+              "Event calendar and registration system.",
+              "Multicurrency Donation Portal.",
+              "Accessibility-First Design: Optimized for screen readers, color contrast compliance, keyboard navigation, and simple interfaces.",
+              "Dynamic Content: Sections for news updates, blogs, event announcements, and success stories.",
+              "Interactive Engagement: Volunteer sign-up forms, and advocacy campaign pages.",
+              "Language Support: Multilingual capabilities to serve diverse Nigerian and global audiences.",
+              "Free Tool: Disability Inclusion Check – A quick online survey organizations can use to assess how inclusive their practices are, with instant results and recommendations for improvement."
+            ],
+            "technology_stack": "Built with Next.js for blazing-fast performance, Tailwind CSS for modern styling, and Node.js backend.",
+            "hosting": "Secure and scalable hosting on platforms like Vercel or AWS.",
+            "seo_optimization": "Ensuring IDEA ranks high in search results to attract more traffic.",
+            "maintenance": "Regular updates and security patches.",
+            "investment": {
+              "total_cost": "₦600,000",
+              "payment_plan": "Flexible payment plans available: 50% upfront, remaining split over 3 months.",
+              "details": [
+                "Includes development, testing, and deployment.",
+                "3 months of post-launch support.",
+                "Training for your team."
+              ]
+            },
+            "timeline": "Website Design and Development: 4-6 weeks."
           }
-        ],
-        "post_launch_benefits": {
-          "fixed_cost": "$18,750/month",
-          "includes": [
-            "Unlimited usage within infrastructure bounds",
-            "Dedicated environment option",
-            "Priority support (4-hour response)",
-            "Custom integration development"
-          ]
         },
-        "infrastructure_limits": [
-          "200 concurrent scans",
-          "1,000 reports monthly",
-          "20 simultaneous campaigns",
-          "15 framework assessments monthly"
-        ],
-        "overage_costs": [
-          "Additional scan capacity: $100/block of 20",
-          "Extra report capacity: $150/block of 100",
-          "Campaign expansion: $200/block of 5",
-          "Framework assessment: $500/block of 3"
-        ]
-      },
-      "emerging_markets": {
-        "development_and_testing_period": {
-          "initial_investment": "$100,000",
-          "payment_structure": "Spread across 30 months ($3,333/month)",
-          "includes": [
-            "Same development influence rights",
-            "Component testing access",
-            "Market-specific support timing"
-          ]
-        },
-        "post_launch_growth_path": [
-          {
-            "stage": "Stage 1",
-            "cost": "$11,250/month",
-            "limits": [
-              "50 reports monthly",
-              "30 scans monthly",
-              "5 campaigns monthly",
-              "3 framework assessments"
-            ]
-          },
-          {
-            "stage": "Stage 2",
-            "cost": "$15,000/month",
-            "limits": [
-              "Double Stage 1 limits",
-              "Triggered by 80% usage over 3 months",
-              "Minimum 6 months at Stage 1"
-            ]
-          },
-          {
-            "stage": "Stage 3",
-            "cost": "$18,750/month",
-            "limits": [
-              "Full platform capabilities",
-              "Standard infrastructure limits",
-              "Progression based on consistent usage",
-              "Market leadership recognition"
-            ]
+        {
+          "title": "Social Media Management",
+          "content": {
+            "strategy": {
+              "platform_focus": ["Facebook", "Instagram", "Twitter", "LinkedIn", "YouTube", "TikTok"],
+              "content_pillars": [
+                "Advocacy Campaigns: Promote policy reforms and gender equity initiatives.",
+                "Success Stories: Highlight personal stories of impact.",
+                "Awareness Content: Share insights on disability rights, climate action, and education.",
+                "Engagement: Interactive polls, Q&A sessions, and live events."
+              ],
+              "analytics_driven": "Regular monitoring of engagement metrics to optimize content.",
+              "deliverables": [
+                "Monthly content calendar.",
+                "Custom graphics, videos, and infographics.",
+                "Campaign management for specific initiatives like the establishment of community centers.",
+                "Sponsored ad campaigns to amplify reach."
+              ]
+            },
+            "investment": {
+              "total_cost": "₦150,000/month",
+              "trial_period": "₦100,000/month for a 3-month trial period.",
+              "commitment": "3-month minimum commitment.",
+              "details": "Includes content creation for 3 platforms."
+            }
           }
-        ],
-        "all_stages_include": [
-          "25% Pioneer Partner discount",
-          "Development influence rights",
-          "Priority regional support",
-          "Custom integration options"
-        ]
-      },
-      "points_based_usage_system": {
-        "description": "Monthly point allocation based on tier",
-        "point_values": [
-          "Technical Report: 2 points",
-          "Automated Scan: 1 point",
-          "Social Campaign: 5 points",
-          "Framework Assessment: 10 points"
-        ]
-      },
-      "investment_protection": {
-        "description": "Your Pioneer Partnership investment is protected:",
-        "protections": [
-          "25% lifetime discount guaranteed",
-          "3-year price lock",
-          "Grandfathered infrastructure limits",
-          "Priority access to new features",
-          "Market-specific customization rights"
-        ]
-      },
-      "faqs": [
-        {
-          "question": "When does billing start for Pioneer Partners?",
-          "answer": "Post-development period, after 30 months of testing and refinement."
         },
         {
-          "question": "What usage is included in Pioneer Partner pricing?",
-          "answer": "Unlimited platform usage within reasonable infrastructure bounds, defined in service agreement."
-        },
-        {
-          "question": "What does priority support include?",
-          "answer": "Direct access to development team, 4-hour response time, dedicated technical account manager."
-        },
-        {
-          "question": "How is usage tracked for growth path progression?",
-          "answer": "Automated monitoring of report generation, scan execution, and assessment completion."
-        },
-        {
-          "question": "What is the minimum commitment period?",
-          "answer": "Pioneer Partners: 3 years post-launch Standard SaaS: Annual commitment"
+          "title": "IDEA Access: AI-Powered Inclusive Solutions",
+          "content": {
+            "stories": [
+              {
+                "name": "Ngozi's Story",
+                "description": "Picture Ngozi, a 67-year-old grandmother in Mbaise, whose failing vision has slowly distanced her from her beloved Bible studies. Every morning, she must wait for her grandchildren to return from their morning chores to help her navigate her audio Bible app. But what if technology could restore her independence? With IDEA Access, Ngozi simply speaks, and the app responds, reading her favorite passages, helping her set bookmarks, and even facilitating her participation in virtual Bible study groups. It's not just about accessing content – it's about maintaining the dignity and spiritual connection that means so much to her."
+              },
+              {
+                "name": "Chioma's Story",
+                "description": "Then there's Chioma, a bright 16-year-old whose dreams of becoming a doctor seem increasingly distant. Her family, stretched thin by financial constraints, had to make the heart-wrenching choice to prioritize her brothers' education. But Chioma's potential shouldn't be limited by circumstances beyond her control. Through IDEA Access, she connects with AI-powered WAEC preparation tools, accessing personalized tutoring, practice tests, and educational resources. The app adapts to her learning style, working around her household responsibilities, allowing her to study whenever she can grab a moment – whether that's early morning or late at night."
+              },
+              {
+                "name": "James' Story",
+                "description": "Consider James, whose wheelchair often feels less like a means of mobility and more like a barrier to participation in everyday life. Too often, he's arrived at buildings only to find himself unable to enter, forced to turn back or wait for assistance. Through IDEA Access, he can now check ahead of time whether a building has wheelchair support, ramps, or elevators. But we've gone further – the app helps him plan accessible routes, connects him with a community of users who share real-time updates about accessibility challenges, and even helps coordinate with building managers to ensure facilities are maintained."
+              }
+            ],
+            "features": [
+              "Progressive Web App architecture ensuring offline access.",
+              "Natural language processing in pidgin and local languages.",
+              "Voice-activated emergency assistance.",
+              "AI-powered tutoring with adaptive learning paths.",
+              "Crowdsourced accessibility information.",
+              "Multi-channel access including USSD, WhatsApp, and SMS.",
+              "End-to-end encryption for user privacy.",
+              "Low-bandwidth optimization for rural areas.",
+              "OpenAI and Gemini AI integration for sophisticated voice processing.",
+              "Real-time translation capabilities."
+            ],
+            "investment": {
+              "total_cost": "$15,000",
+              "funding_strategies": [
+                "Phased development approach.",
+                "Partnership with tech foundations.",
+                "Grant application support.",
+                "Crowdfunding campaigns.",
+                "Corporate sponsorship programs."
+              ],
+              "rationale": "The higher price point and dollar denomination reflect the technical complexity, ongoing infrastructure costs, AI model training, and continuous improvement needed to ensure the platform remains effective and accessible."
+            },
+            "timeline": "App Development: 3-4 months (phased approach available)."
+          }
         }
       ]
-    }
-  },
-  "support_and_maintenance": {
-    "title": "SUPPORT AND MAINTENANCE",
-    "description": "For Digital Encode, platform adoption means more than accessing new capabilities. Success demands proper support, comprehensive training, and seamless maintenance. Our approach ensures you extract maximum value from day one.",
-    "pioneer_partner_support": {
-      "title": "Pioneer Partner Support",
-      "description": "Direct access to our development team transforms support from ticket resolution to strategic partnership.",
-      "support_channels": [
-        "Dedicated technical account manager",
-        "Direct developer communication",
-        "Priority email support",
-        "Secure collaboration portal"
-      ],
-      "response_priorities": [
-        "Critical issues: 4 hours",
-        "Major issues: 8 hours",
-        "Standard requests: 24 hours",
-        "Feature requests: 48 hours"
-      ]
     },
-    "training_program": {
-      "title": "Training Program",
-      "description": "Comprehensive training ensures your team maximizes platform capabilities while maintaining assessment quality.",
-      "initial_rollout": [
-        "Platform architecture overview",
-        "Component-specific training",
-        "Integration workshops",
-        "Best practice sessions"
-      ],
-      "ongoing_development": [
-        "Monthly advanced feature training",
-        "New component orientations",
-        "Custom workflow optimization",
-        "Integration enhancement support"
-      ]
-    },
-    "platform_updates": {
-      "title": "Platform Updates",
-      "description": "Regular updates enhance platform capabilities without disrupting your operations.",
-      "update_categories": [
-        "Security patches",
-        "Feature enhancements",
-        "Performance improvements",
-        "Integration updates"
-      ],
-      "pioneer_partner_benefits": [
-        "Early access to new features",
-        "Influence over update priorities",
-        "Testing environment access",
-        "Custom deployment scheduling"
-      ]
-    },
-    "knowledge_resources": {
-      "title": "Knowledge Resources",
-      "description": "Beyond direct support, your team accesses comprehensive knowledge tools:",
-      "documentation": [
-        "Technical guides",
-        "Best practice playbooks",
-        "Integration cookbooks",
-        "Workflow templates"
-      ],
-      "custom_resources": [
-        "Market-specific guides",
-        "Regional compliance frameworks",
-        "Custom deployment patterns",
-        "Integration examples"
-      ]
-    }
-  },
-  "next_steps": {
-    "title": "NEXT STEPS",
-    "description": "Transforming security assessment workflows requires careful orchestration. As our Pioneer Partner, Digital Encode’s journey begins with strategic alignment that ensures maximum value from day one.",
-    "promotion_phase": {
-      "title": "PROMOTION PHASE",
-      "description": "Your team’s expertise in both technical assessments and compliance frameworks provides unique insight into African market needs.",
-      "discovery_phase_outcomes": [
-        "Documented assessment workflows and optimization opportunities",
-        "Integration requirements for existing security tools",
-        "Custom reporting and template requirements",
-        "Team training and enablement priorities"
-      ]
-    },
-    "development_journey": {
-      "title": "Development Journey",
-      "description": "CyberScribe development marks the beginning of our technical partnership.",
-      "development_milestones": [
+    {
+      "title": "Why this Matters and Success Stories",
+      "content": [
+        "Empowering marginalized communities to access resources and opportunities independently.",
+        "Increasing IDEA’s visibility and support network locally and globally.",
+        "Creating an enduring legacy of inclusion, equity, and empowerment.",
         {
-          "component": "CyberScribe (Months 1-8)",
-          "activities": [
-            "Technical discovery",
-            "Automation framework",
-            "Initial testing"
-          ]
-        },
-        {
-          "component": "ReRun (Months 9-16)",
-          "activities": [
-            "Integration architecture",
-            "Automation validation",
-            "Workflow refinement"
-          ]
-        },
-        {
-          "component": "Preteater (Months 17-22)",
-          "activities": [
-            "Campaign framework",
-            "Infrastructure deployment",
-            "Full testing"
-          ]
-        },
-        {
-          "component": "Guardian (Months 23-30)",
-          "activities": [
-            "Compliance mapping",
-            "Interview systems",
-            "Platform completion"
+          "case_studies": [
+            {
+              "name": "Women in Technology Uganda (WITU)",
+              "impact": "Trained 8,000+ women in digital skills. Their platform hosts annual reports promoting transparency and increasing donor confidence."
+            },
+            {
+              "name": "Disability Rights Fund, Global",
+              "impact": "Created an accessible global network connecting 2,000+ disability organizations. Increased grant applications from underserved regions. Improved impact measurement through real-time data collection."
+            },
+            {
+              "name": "BRAC, Bangladesh",
+              "impact": "Demonstrated scalable impact through digital transformation, benefiting multiple sectors and increasing donor confidence."
+            }
           ]
         }
       ]
     },
-    "strategic_alignment": {
-      "title": "Strategic Alignment",
-      "description": "The initial partnership agreement reflects more than standard terms. It captures our shared vision for transforming security assessments.",
-      "partnership_foundations": [
-        "Technical discovery and requirements alignment",
-        "Investment structure finalization",
-        "Development priority setting",
-        "Team access and training initialization"
-      ]
+    {
+      "title": "Why Work with Me",
+      "content": "I don't see this as just another project – I see it as a partnership in creating meaningful change. My approach, which comes from a BSc. in Software Engineering and a half a decade of experience working in Social Development, combines technical expertise with deep empathy, ensuring that every line of code we write serves a greater purpose in your mission of empowerment and inclusion. I bring experience in developing solutions for NGOs, understanding local context and challenges, dedication to long-term partnership, and flexible pricing to accommodate non-profit budgets."
     },
-    "immediate_path_forward": {
-      "title": "Immediate Path Forward",
-      "description": "Let's begin with a focused technical discovery session.",
-      "next_steps": [
-        "Your team's insights into current assessment challenges help prioritize early development efforts.",
-        "We'll review the partnership agreement, finalize the investment approach, and initiate environment preparation."
-      ]
+    {
+      "title": "Next Steps",
+      "content": "Let's start with a conversation. I want to hear more about your vision, understand the challenges you've faced, and explore how we can work together to create technology that truly serves everyone. Together, we can build solutions that don't just solve problems – they transform lives."
+    },
+    {
+      "title": "Closing Note",
+      "content": "All prices are negotiable based on project scope and funding availability. I'm committed to finding a way to make these solutions accessible to IDEA while ensuring sustainability."
     }
-  },
-  "closing_message": {
-    "title": "Moving Forward Together",
-    "description": "Digital Encode stands at a pivotal moment. Security assessment automation will transform how consultants work, and you have the opportunity to shape this transformation.",
-    "journey_benefits": [
-      "Immediate value while building long-term competitive advantage.",
-      "From CyberScribe's report automation to Guardian's compliance intelligence, each component enhances your team's capabilities.",
-      "Your expertise guides development, ensuring the platform serves both regional and global security assessment needs."
-    ],
-    "call_to_action": "We're ready to begin this partnership. Your next step is a technical discovery session, where we'll align development priorities with your vision for security assessment evolution.",
-    "final_statement": "Let's transform security consulting together."
-  },
-  "thank_you": {
-    "title": "THANK YOU",
-    "message": "For choosing The Radar."
-  }
+  ]
 }
